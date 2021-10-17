@@ -20,4 +20,8 @@ file {''/opt/minecraft/eula.txt':
     ensure => file,
     source => 'puppet:///modules/mincraft/minecraft.service'
     }
+    service {'minecraft':
+      ensure => running,
+      enable =? true,
+    }
  }
