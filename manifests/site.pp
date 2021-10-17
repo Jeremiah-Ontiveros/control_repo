@@ -4,4 +4,6 @@ node default {
     content => 'THis is a readme',
     owner   => 'root',
   }
+  file { '/root/README':
+    owner => 'root',
 }
