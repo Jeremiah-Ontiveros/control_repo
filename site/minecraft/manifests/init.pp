@@ -22,6 +22,6 @@ file {'/opt/minecraft/eula.txt':
     }
     service {'minecraft':
       ensure => running,
-      enable =? true,
+      enable => true,
     }
  }
