@@ -9,7 +9,7 @@ file {'/opt/minecraft/server.jar':
   
   }
 
-packages {'java':
+package {'java':
   ensure => present,
   }
 file {'/opt/minecraft/eula.txt':
